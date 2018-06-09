@@ -1,0 +1,151 @@
+.app {
+  position: relative;
+}
+
+.app__filter {
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
+  position: fixed;
+  top: 20%;
+}
+
+.app__filter-input {
+  position: relative;
+  min-height: 20px;
+  z-index: 1;
+}
+
+.cite {
+  padding: 20px 50px;
+  margin: auto;
+  margin-bottom: 50px;
+  max-width: 900px;
+  border-radius: 10px;
+  background: #f5f5f5;
+}
+
+.cite__header {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  background: #ccccff;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cite__button {
+  background: transparent;
+  border: 0;
+}
+
+.cite__button:nth-child(2) {
+  margin-left: auto;
+}
+
+.cite__text {
+  padding: 0 20px;
+  margin-bottom: 10px;
+  font-size: 25px;
+  font-style: italic;
+  text-align: center;
+}
+
+.cite__details {
+  font-size: 20px;
+  margin-left: 70%;
+}
+
+.modal {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 2;
+}
+
+.modal__content {
+  position: fixed;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
+  padding: 20px;
+  left: calc(50% - 400px);
+  top: 30%;
+  width: 800px;
+  background: #ccccff;
+}
+
+.modal__close {
+  position: absolute;
+  right: 3px;
+  top: 3px;
+  background: transparent;
+  border: 0;
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+}
+
+.modal__close::before {
+  content: '';
+  position: absolute;
+  top: 6px;
+  left: 0;
+  height: 2px;
+  width: 15px;
+  background: gray;
+  transform: rotate(45deg);
+}
+
+.modal__close::after {
+  content: '';
+  position: absolute;
+  top: 6px;
+  left: 0;
+  height: 2px;
+  width: 15px;
+  background: gray;
+  transform: rotate(-45deg);
+}
+
+.modal__label {
+  display: flex;
+  -ms-align-items: baseline;
+  align-items: baseline;
+}
+
+.modal__input {
+  -webkit-flex: 1;
+  -moz-flex: 1;
+  -ms-flex: 1;
+  -o-flex: 1;
+  flex: 1;
+}
+
+.modal__category,
+.modal__text,
+.modal__author,
+.modal__date {
+  border: 0;
+  padding: 5px 10px;
+  margin-bottom: 10px; 
+}
+
+.modal__text {
+  max-width: 780px;
+  max-height: 300px;
+}
+
+.modal__save {
+  padding: 5px 10px;
+  -ms-align-self: center;
+  align-self: center;
+  font-size: 25px;
+}
